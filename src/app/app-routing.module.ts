@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutUsComponent } from './component/about-us/about-us.component';
-import { ContactUsComponent } from './component/contact-us/contact-us.component';
-import { EventsComponent } from './component/events/events.component';
-import { GalleryComponent } from './component/gallery/gallery.component';
-import { HomeComponent } from './component/home/home.component';
-import { OurTeamComponent } from './component/our-team/our-team.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { EventsComponent } from './pages/events/events.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { HomeComponent } from './pages/home/home.component';
+import { OurTeamComponent } from './pages/our-team/our-team.component';
 
 const routes: Routes = [
   {
