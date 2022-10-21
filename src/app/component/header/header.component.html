@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-expand-lg header_Body">
+    <div class="container-fluid row">
+        <div class="col-4">
+            <a class="navbar-brand" href="#">
+                <img src="../../../assets/img/logo.png" alt="Logo Image" width="25" height="40">
+                <span class="title">ABC</span>
+            </a>
+              
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="collapse navbar-collapse col-8 menuBody" id="navbarText">
+            <ul class="navbar-nav  mb-2 mb-lg-0" *ngFor="let menu of menuList; let count = index">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="{{menu.getLink()}}">{{menu.getMenuName()}}</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+  </nav>

@@ -1,0 +1,9 @@
+.footerBody{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footerText{
+    color: #CD6155;
+    font-weight: bold;
+}
