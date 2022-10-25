@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SliderImage } from 'src/app/model/SliderImage';
-import { SliderService } from 'src/app/services/slider.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -9,12 +7,11 @@ import { SliderService } from 'src/app/services/slider.service';
 })
 export class SliderComponent implements OnInit {
 
-  sliderList : SliderImage[] = [];
+  @Input() sliderList : any; 
   
-  constructor(private sliderService : SliderService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.sliderList = this.sliderService.getImageList();
   }
 
 }
