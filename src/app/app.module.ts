@@ -16,6 +16,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { OurTeamComponent } from './pages/our-team/our-team.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent],

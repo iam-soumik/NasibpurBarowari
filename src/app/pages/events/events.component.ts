@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Events } from 'src/app/model/event';
+import { EventService } from 'src/app/services/event.service';
 
 @Component({
   selector: 'app-events',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  events : Events[] = [];
+  constructor(private eventService : EventService) { }
 
   ngOnInit(): void {
+    this.events = this.eventService.getEventsList();
+  }
+
+  knowMore(events : Events){
+    console.log("Clicked Events ---> ", events);
   }
 
 }

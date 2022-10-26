@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/model/menu';
 import { MenuService } from 'src/app/services/menu.service';
+import { MatMenuModule} from '@angular/material/menu';
 
 @Component({
   selector: 'app-header',

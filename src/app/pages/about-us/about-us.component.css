@@ -1,0 +1,12 @@
+.sideImage{
+    max-width: -webkit-fill-available;
+}
+
+.bodyText{
+    justify-content: space-between;
+}
+.style-card {
+    margin-bottom: 5px;
+    background-color: #FBFCFC;
+    color: #1B2631;
+}
